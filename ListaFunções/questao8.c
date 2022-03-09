@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <string.h>
-#define TAM 2
 
 typedef struct {
 	
