@@ -2,28 +2,32 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-void ler3Palavras (char vetor[3]){
-  
-   int i;
-   
-   
-  for (i = 0; i < 3; i++){
-      
-    printf("Informe a palavra [%d]\n ", i+1); 
-    scanf("%c",&vetor[i]);
-    }
-    
-}
+void ler3Palavras (char vetor[3][20]);
 
 int main()
+{	
+  int i;
+	char vetor[3][20];
+	ler3Palavras(vetor);
+	
+	printf(" As palavras digitadas foram:\n");
+	for(i=0;i<=2;i++){
+    	printf(" %s", vetor[i]);  
+	}
+	
+return 0;
+}
 
-{
-  char vetor[3];
-    
-  ler3Palavras(vetor);
-    printf("%c\n", vetor[0]);
-    printf("%c\n", vetor[1]);
-    printf("%c\n", vetor[2]);
-    
+void ler3Palavras (char vetor[3][20]){
+
+	int i;
+	i = 0;
+		
+	for (i = 0; i <= 2; i++){
+		printf("Informe a palavra\n");
+        scanf ("%s",vetor[i]);
+     }
+
 }
