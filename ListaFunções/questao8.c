@@ -5,50 +5,59 @@
 #include <string.h>
 #define TAM 2
 
-typedef struct dados_pessoas{
+typedef struct {
+	
+	int dia;
+	int mes;
+	int ano;
 
-char nome[31];
-int idade;
-char sexo;
-char cpf[16];
+}nascimento;
 
-}Pessoa;
+typedef struct{
+    
+	char nome [20];
+	char cpf [20];
+	char sexo;
+	nascimento dataNascimento;
 
+}cad_cliente;
 
+cad_cliente cadastrarCliente ();
 
-int main(){
-  
-Pessoa pessoas[TAM];
-int i;
+int main() {	
+	
+	cad_cliente cadastro;
+	cadastro = cadastrarCliente ();
+	
+	printf ("**************************************");
+  printf ("**************************************");
+	printf ("\n\nNome do cliente...............: %s ",cadastro.nome);
+	printf ("\n\nCPF do cliente...............: %s ", cadastro.cpf);
+	printf ("\n\nSexo do cliente........: %c ", cadastro.sexo);
+	printf ("\n\nDia de nascimento...............: %d ",cadastro.dataNascimento.dia);
+	printf ("\n\nMes de nascimento...............: %d ",cadastro.dataNascimento.mes);
+	printf ("\n\nAno de nascimento...............: %d ",cadastro.dataNascimento.ano);
 
-  for (i=0;i<TAM;i++){
-  printf("Digite seu nome:");
-  fgets (pessoas[i].nome,31, stdin);
-  size_t ln = strlen (pessoas[i].nome)-1;
-  if(pessoas[i].nome[ln]=='\n')
-  pessoas[i].nome[ln]= '\0';
-
-  printf("Digite seu sexo:");
-  scanf("%c",&pessoas[i].sexo);
-
-  printf("Digite sua idade:");
-  scanf("%d",&pessoas[i].idade);
-
-  getchar();
-
-  printf("Digite seu CPF:");
-  fgets (pessoas[i].cpf,15, stdin);
-  ln = strlen (pessoas[i].cpf)-1;
-  if(pessoas[i].cpf[ln]=='\n')
-  pessoas[i].cpf[ln]= '\0';
 }
-printf("\n****Pessoas Cadastradas****\n");
 
-for(i=0;i<TAM;i++){
-  printf("-----\n");
-  printf("Nome: %s\n", pessoas[i].nome);
-  printf("Sexo: %c\n", pessoas[i].sexo);
-  printf("Idade: %d\n", pessoas[i].idade);
-  printf("CPF: %s\n", pessoas[i].cpf);
-  }
+cad_cliente cadastrarCliente (){
+
+	cad_cliente inserirDados;
+
+		printf ("\nNome do cliente:...............:");
+		fflush(stdin);
+		fgets (inserirDados.nome, 100, stdin);
+		printf ("\nCPF do cliente:...............:");
+		scanf ("%s", inserirDados.cpf);
+		printf ("\nSexo do cliente: M para masc.,F para fem. , O para ouros.:");
+		scanf (" %c", &inserirDados.sexo);
+		printf ("\nDia de nascimento:...............:");
+		scanf ("%d", &inserirDados.dataNascimento.dia);
+		printf ("\nMes de nascimento:...............:");
+		scanf ("%d", &inserirDados.dataNascimento.mes);
+		printf ("\nAno de nascimento:...............:");
+		scanf ("%d", &inserirDados.dataNascimento.ano);
+		printf ("**************************************");
+	
+	return inserirDados;
 }
