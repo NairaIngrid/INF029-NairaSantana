@@ -12,7 +12,7 @@ int main () {
     printf("Informe a sua idade:\n");
     scanf("%d", &idade);
     
-    if (idade>0){
+    if (idade>=0){
 
       if(idade>=18){
       printf("Você é maior de idade!\n");
@@ -24,6 +24,6 @@ int main () {
       }
     }
     
-   while (idade>0);
+   while (idade>=0);
   
   }
