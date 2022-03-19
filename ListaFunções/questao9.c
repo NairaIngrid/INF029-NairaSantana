@@ -54,9 +54,9 @@ int main() {
       }else{
         printf("\n\n*************************************\n\n");
         printf("Cliente cadastrado com sucesso:\n");
-        printf("%s\n",cadastro.nome);
-        printf("%s\n",cadastro.cpf);
-        printf("%d/%d/%d\n",       cadastro.dataNascimento.dia,cadastro.dataNascimento.mes,cadastro.dataNascimento.ano);
+        printf("Nome: %s\n",cadastro.nome);
+        printf("CPF: %s\n",cadastro.cpf);
+        printf("Nascimento: %d/%d/%d\n",       cadastro.dataNascimento.dia,cadastro.dataNascimento.mes,cadastro.dataNascimento.ano);
     }
   }
 cad_cliente cadastrarCliente (){
@@ -137,7 +137,7 @@ int validarCPF(char string[]){
     while(string[numeroscpf] != '\0'){
         numeroscpf++;
     }
-    if(numeroscpf > 14){
+    if(numeroscpf > 11){
         numeroscpf = 0;
     }
     else{
