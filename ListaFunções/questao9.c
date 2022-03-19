@@ -117,9 +117,9 @@ cad_cliente cadastrarCliente (){
     return erro;
 }
 
-int validarGenero(char c){
+int validarSexo(char c){
     
-    int generovalidado=0;
+    int sexovalidado=0;
     
     if(c == 'f' || c == 'F' || 
        c == 'm' || c == 'M'){
