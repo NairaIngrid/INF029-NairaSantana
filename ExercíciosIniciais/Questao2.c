@@ -13,4 +13,6 @@ int main () {
   somaIdades = idade1+idade2;
 
   printf ("A soma das idades é: %d", somaIdades);
-}/
+  
+  return 0;
+}
