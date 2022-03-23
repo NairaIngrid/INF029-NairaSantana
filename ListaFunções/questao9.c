@@ -73,7 +73,7 @@ cad_cliente cadastrarCliente (){
           inserirDados.id = -1;
           return inserirDados;
       }else{
-          printf("Insira o CPF do cliente. Apenas números, sem pontos ou hífens\n");
+          printf("Insira o CPF do cliente, de forma completa com pontos e hífen: \n");
           fgets(inserirDados.cpf, 20, stdin);
         
           erro = validarCPF(inserirDados.cpf);
