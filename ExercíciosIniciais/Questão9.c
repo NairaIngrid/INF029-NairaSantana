@@ -33,4 +33,6 @@ soma =0;
     }
   }
   printf("\nA soma é : %d", soma);
+  
+  return 0;
 }
