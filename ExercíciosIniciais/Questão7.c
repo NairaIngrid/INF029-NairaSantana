@@ -18,4 +18,6 @@ int main(){
         else
             printf("%d não é um número primo. ", n);
     
+    return 0;
+    
 }

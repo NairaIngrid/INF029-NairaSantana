@@ -26,4 +26,6 @@ int main () {
     
    while (idade>=0);
   
+  return 0;
+  
   }

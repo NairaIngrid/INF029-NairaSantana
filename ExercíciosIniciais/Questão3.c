@@ -18,4 +18,5 @@ int main () {
 
   printf("n1= %d e n2 = %d", n1,n2);
   
+  return 0;
 }

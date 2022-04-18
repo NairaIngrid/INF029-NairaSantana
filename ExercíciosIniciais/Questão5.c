@@ -14,4 +14,5 @@ int main () {
     }else{
       printf("Você ainda não atingiu a maior idade!");
     }
+  return 0;
   }

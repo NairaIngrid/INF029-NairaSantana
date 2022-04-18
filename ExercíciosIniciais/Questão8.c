@@ -16,5 +16,5 @@ int main()
     fat = fat * n;
     printf("O fatorial é: %d", fat);
   }
-   
+ return 0;
 }

@@ -48,4 +48,5 @@ for(i=0;i<TAM;i++){
   printf("Idade: %d\n", pessoas[i].idade);
   printf("CPF: %s\n", pessoas[i].cpf);
   }
+  return 0;
 }
