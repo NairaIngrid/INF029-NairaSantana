@@ -29,14 +29,19 @@ void testQ6();
 
 int main()
 {
-    //testSomar();
-   // testFatorial();
-    //testQ1();
-    //testQ2();
-    //testQ3();
-    //testQ4();
-    testQ5();
-    //testQ6();
+  //testSomar();
+  // testFatorial();
+  testQ1();
+  printf("\n");
+  testQ2();
+  printf("\n");
+  testQ3();
+  printf("\n");
+  testQ4();
+  printf("\n");
+  testQ5();
+  printf("\n");
+  testQ6();
 }
 
 /*void testSomar()
@@ -136,7 +141,11 @@ void testQ2()
     printf("%d\n", dma.qtdDias == 1);
     printf("%d\n", dma.qtdMeses == 1);
     printf("%d\n", dma.qtdAnos == 0);
-}
+    //printf("qtdDias: %d\n", dma.qtdDias);
+    //printf("qtdMeses: %d\n", dma.qtdMeses);
+    //printf("qtdAnos: %d\n", dma.qtdAnos);
+  }
+
 
 void testQ3()
 {
