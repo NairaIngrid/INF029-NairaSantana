@@ -312,6 +312,7 @@ int q3(char *texto, char c, int isCaseSensitive)
         O retorno da função, n, nesse caso seria 1;
  */
 
+
 int comparacaoTextos(char busca[], char texto[], int j)
 {
   int i;
